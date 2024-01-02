@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Pop from "./popup";
+import Pop from "./Modal";
 
 function Item({data}){
     const [popup, setPopup] = useState(false)

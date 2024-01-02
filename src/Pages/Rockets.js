@@ -16,7 +16,6 @@ function Rockets(){
 
     return(
     <div className="main-container">
-        <Search/>
         {rockets.length<1?<span>Loading Data...</span>:rockets.map((i)=>(<Item data={i} key={i.id}/>))}
     </div>
     )
