@@ -1,0 +1,19 @@
+.modalBack{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: #0000006b;
+    backdrop-filter: blur(0.5rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pop{
+    border-radius: 1rem;
+    background: white;
+    padding: 1rem;
+}

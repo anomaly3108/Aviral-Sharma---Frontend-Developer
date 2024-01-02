@@ -1,0 +1,28 @@
+.item{
+    background: white;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 5px 0px #0000001c;
+    margin: 0.5rem;
+}
+
+.item .data{
+    max-width: 18rem;
+    padding: 1rem;
+}
+
+.item .title{
+    font-weight: bold;
+}
+
+.image{
+    width: 20rem;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    -ms-transition: all .8s ease;
+    transition: all .8s ease;
+}
+
+.image:hover{
+    transform: scale(1.2);
+}
