@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from "react-dom";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+import { Provider } from 'react-redux';
+import store from './utils/store';
 
 import Header from './Components/Header';
 import Footer from './Components/Footer';
@@ -13,11 +15,11 @@ import ObjectDisplay from './Pages/objectDisplay';
 
 const Applayout = () =>{
     return(
-        <>
+        <Provider store={store}>
             <Header/>
             <Outlet/>
             <Footer/>
-        </>
+        </Provider>
     )
 }
 

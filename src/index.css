@@ -3,9 +3,18 @@
     --background:#fbfbfb;
     --input:#eaeaea;
     --text:#212121;
-    --shadow:0 1px 9px #e8e8e8;
+    --shadow:0 1px 9px #00000052;
     --highlight:#888;
 }
+
+.search-form{
+    width: 100vw;
+    padding-top: 5rem;
+    height: 30vh;
+    background: #265e6f;
+    clip-path: ellipse(100% 50%);
+}
+
 
 .header{
     background-color: var(--background);
@@ -51,6 +60,7 @@ a, .link{
     text-align: center;
     text-decoration: none;
     transition: .25s;
+    cursor: pointer;
 }
 
 a:hover{
@@ -64,6 +74,7 @@ a:hover{
 body{
     background-color: var(--background);
     display: flex;
+    margin: 0px;
 }
 
 input, .input{
@@ -262,7 +273,8 @@ ul{
 /* Post */
 
 .main-container{
-    margin: 5rem 0rem 4rem 15rem;
+    /* margin: 5rem 0rem 4rem 15rem; */
+    margin: 5rem 0rem;
     display: flex;
     flex-wrap: wrap;
 }

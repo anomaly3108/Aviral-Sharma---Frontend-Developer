@@ -7,7 +7,6 @@ function Item({data}){
     return(
         <div className="item" onClick={()=>(setPopup(!popup))}>
             <div style={{overflow: "hidden",width: "20rem",height: "13rem"}}><img src={data.flickr_images[0]} className="image"/></div>
-            {console.log(data)}
             <div className="data">
                 <span className="title">NAME:</span><span className="value"> {data.rocket_name}</span><br/>
                 <span className="title">COUNTRY:</span><span className="value">{data.country}</span><br/>

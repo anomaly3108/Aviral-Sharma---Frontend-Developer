@@ -12,6 +12,11 @@
     align-items: center;
 }
 
+.modalimage{
+    max-width: 80vw;
+
+}
+
 .pop{
     border-radius: 1rem;
     background: white;
