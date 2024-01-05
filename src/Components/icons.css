@@ -1,7 +1,61 @@
-/* .main-container{
-    justify-content: space-around;
-    width: 80vw;
-} */
+
+.borderbox{
+    margin: 1rem;
+    padding: 1rem;
+    max-width: 25rem;
+    min-width: 15rem;
+    height: 10rem;
+    border-radius: 1rem;
+    box-shadow: -8px -8px 15px white, 8px 8px 25px #0000002b;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.borderbox:hover{
+    transform: scale(1.1);
+}
+
+.logocontainer{
+    transition: 2s;
+}
+
+.logocontainer:hover{
+    rotate: -45deg;
+}
+
+.rocketCss{
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.logo{
+    width: 5rem;
+    height: 5rem;
+    filter: invert(1);
+    transition: 1s;
+}
+
+.logo:hover{
+    transform: rotate(-45deg);
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes shake {
+0% { transform: translate(1px, 1px) }
+10% { transform: translate(-1px, -2px)  }
+20% { transform: translate(-3px, 0px)  }
+30% { transform: translate(3px, 2px)  }
+40% { transform: translate(1px, -1px)  }
+50% { transform: translate(-1px, 2px)  }
+60% { transform: translate(-3px, 1px)  }
+70% { transform: translate(3px, 1px)  }
+80% { transform: translate(-1px, -1px)  }
+90% { transform: translate(1px, 2px)  }
+100% { transform: translate(1px, -2px)  }
+}
 
 .loader{
     position: relative;
@@ -50,7 +104,7 @@
 }
 
 i:hover{
-    transform: rotate(360deg);
+    transform: rotate(36-45deg);
 }
 
 .icon{

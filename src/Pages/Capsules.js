@@ -28,9 +28,9 @@ function Capsules() {
         {Capsules.length<1?<span>Loading Data...</span>:Capsules.map((i)=>(<Cap data={i} key={i?.capsule_serial}/>))}
     </div>
     <div className="pagination">
-            {offset<10?<span style={{color:"grey"}}>prev</span>:<div onClick={()=>offsetchange(0)} className="button">prev</div>}
-            <div className="button">   &#9675;   &#9673;   {(offset/10)+1}   &#9673;   &#9675;  </div>
-            {Capsules.length<10?<span style={{color:"grey"}}>Next</span>:<div onClick={()=>offsetchange(1)} className="button">Next</div>}
+            {offset<10?<span style={{color:"grey"}} className="link">prev</span>:<div onClick={()=>offsetchange(0)} className="link button">prev</div>}
+            <div className="link button">{(offset/10)+1}</div>
+            {Capsules.length<10?<span style={{color:"grey"}} className="link">Next</span>:<div onClick={()=>offsetchange(1)} className="link button">Next</div>}
     </div>
     </>
     

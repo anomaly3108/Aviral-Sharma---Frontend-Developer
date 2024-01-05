@@ -1,4 +1,5 @@
 function Cap({data}){
+    console.log(data);
     return(
         <div className="item">
             <div className="data">

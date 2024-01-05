@@ -12,9 +12,13 @@
     align-items: center;
 }
 
-.modalimage{
+.modalimage, .imagecontainer{
     max-width: 80vw;
+    border-radius: 1rem;
+    transition: 1s;
+}
 
+.modalDetails{
 }
 
 .pop{

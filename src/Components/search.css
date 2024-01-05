@@ -1,0 +1,20 @@
+.search-form{
+    width: 100vw;
+    padding-top: 5rem;
+    height: 30vh;
+    background: #265e6f;
+    clip-path: ellipse(100% 50%);
+    display: flex;
+    justify-content: center;
+}
+
+.form{
+    max-width: 80%;
+    width: 80%;
+}
+
+.searchbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

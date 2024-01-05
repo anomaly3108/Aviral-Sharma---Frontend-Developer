@@ -8,7 +8,9 @@ const RocketSlice = createSlice({
     reducers:{
         addRocket:(state, action)=>{
             // console.log(action.payload)
-            state.items.push(action.payload)
+            let newstate = {items:[...action.payload]}
+            return newstate
+            
         },
         
         clearRocket:(state)=>{

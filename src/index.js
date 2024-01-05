@@ -11,7 +11,6 @@ import Home from './Pages/Home';
 import Rockets from './Pages/Rockets'
 import Capsules from './Pages/Capsules'
 import './index.css';
-import ObjectDisplay from './Pages/objectDisplay';
 
 const Applayout = () =>{
     return(
@@ -40,10 +39,6 @@ const router = createBrowserRouter([
         {
             path: "/Capsules",
             element: <Capsules />,
-        },
-        {
-            path: "/test",
-            element: <ObjectDisplay />,
         }
       ],
     },

@@ -7,15 +7,6 @@
     --highlight:#888;
 }
 
-.search-form{
-    width: 100vw;
-    padding-top: 5rem;
-    height: 30vh;
-    background: #265e6f;
-    clip-path: ellipse(100% 50%);
-}
-
-
 .header{
     background-color: var(--background);
     box-shadow:var(--shadow);
@@ -70,6 +61,12 @@ a:hover{
     display: flex;
 }
 
+.filter{
+    background: #acacac24;
+    margin: 1rem;
+    cursor: pointer;
+    color: grey;
+}
 
 body{
     background-color: var(--background);
@@ -78,21 +75,14 @@ body{
 }
 
 input, .input{
-    border: none;
-    width: 60%;
-    outline: none;
-    background-color: transparent;
-    margin-left: 0.375rem;
-    position: relative;
     color: var(--text);
     background-color: var(--input);
-    /* background-color: white; */
     font-weight: 700;
-    display: flex;
     align-items: center;
-    border-radius: 1.4375rem;
+    border-radius: 1.5rem;
     padding: 0 0.875rem;
-    height: 3rem;
+    margin-right: 0.5rem;
+    height: 2.5rem;
     border: 1px solid transparent;
 }
 
