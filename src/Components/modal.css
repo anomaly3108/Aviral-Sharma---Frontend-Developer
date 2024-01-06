@@ -13,13 +13,20 @@
 }
 
 .modalimage, .imagecontainer{
+    max-height: 50vh;
     max-width: 80vw;
     border-radius: 1rem;
     transition: 1s;
 }
 
-.modalDetails{
+
+.hr{
+    color: #dfdfdf;
+    height: 1px;
+    background: radial-gradient(#d6d6d6, transparent);
+    border: none;
 }
+
 
 .pop{
     border-radius: 1rem;

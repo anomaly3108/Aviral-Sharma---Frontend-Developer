@@ -6,6 +6,7 @@ import '../Components/item.css'
 function Capsules() {
     const [Capsules, setCapsules] = useState([])
     const [offset, setOffset] = useState(0)
+    const [css, setCss] = useState({opacity:"0"})
 
     function offsetchange(nav){
         setOffset(offset+10)
@@ -16,6 +17,7 @@ function Capsules() {
     }
 
     useEffect(()=>{
+        setCss({opacity:"1"})
         fetch("https://api.spacexdata.com/v3/capsules?limit=10&offset="+offset, {method:'GET'})
         .then(response => response.json())
         .then(result => setCapsules(result))
@@ -24,18 +26,16 @@ function Capsules() {
 
     return(
     <>
-    <div className="main-container">
-        {Capsules.length<1?<span>Loading Data...</span>:Capsules.map((i)=>(<Cap data={i} key={i?.capsule_serial}/>))}
-    </div>
-    <div className="pagination">
-            {offset<10?<span style={{color:"grey"}} className="link">prev</span>:<div onClick={()=>offsetchange(0)} className="link button">prev</div>}
-            <div className="link button">{(offset/10)+1}</div>
-            {Capsules.length<10?<span style={{color:"grey"}} className="link">Next</span>:<div onClick={()=>offsetchange(1)} className="link button">Next</div>}
-    </div>
+        <div className="main-container motion" style={css}>
+            {Capsules.length<1?<span>Loading Data...</span>:Capsules.map((i)=>(<Cap data={i} key={i?.capsule_serial}/>))}
+        </div>
+        <div className="pagination">
+                {offset<10?<span style={{color:"grey"}} className="link">prev</span>:<div onClick={()=>offsetchange(0)} className="link button">prev</div>}
+                <div className="link button">{(offset/10)+1}</div>
+                {Capsules.length<10?<span style={{color:"grey"}} className="link">Next</span>:<div onClick={()=>offsetchange(1)} className="link button">Next</div>}
+        </div>
     </>
-    
     )
 }
-  
-  export default Capsules;
-  
+
+export default Capsules;

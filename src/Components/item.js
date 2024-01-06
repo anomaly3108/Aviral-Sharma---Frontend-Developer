@@ -12,7 +12,7 @@ function Item({data}){
                 <span className="title">COUNTRY:</span><span className="value">{data.country}</span><br/>
                 <span className="title">Read more<a href={data.wikipedia} target="blank">here</a></span><br/>
             </div>
-            {popup && <Pop popupdata={data}/>}
+            {popup && <Pop popupdata={data} modalType="1"/>}
         </div>
     )
 }

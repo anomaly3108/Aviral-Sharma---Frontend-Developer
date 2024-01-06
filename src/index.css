@@ -6,7 +6,9 @@
     --shadow:0 1px 9px #00000052;
     --highlight:#888;
 }
-
+h1, h2{
+    margin: 0.5rem
+}
 .header{
     background-color: var(--background);
     box-shadow:var(--shadow);
@@ -33,6 +35,10 @@
     line-height: 3rem;
     padding: 0 0.875rem;
     text-align: center;
+}
+
+.motion{
+    transition:0.5s
 }
 
 .home{
@@ -63,7 +69,6 @@ a:hover{
 
 .filter{
     background: #acacac24;
-    margin: 1rem;
     cursor: pointer;
     color: grey;
 }
@@ -263,7 +268,6 @@ ul{
 /* Post */
 
 .main-container{
-    /* margin: 5rem 0rem 4rem 15rem; */
     margin: 5rem 0rem;
     display: flex;
     flex-wrap: wrap;
