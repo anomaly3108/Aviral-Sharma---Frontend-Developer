@@ -120,19 +120,13 @@ input, .input{
 .btn{
     width: 6.25rem;
     height: 2.5rem;
-    margin-right: 3.125rem;
     color: #f5f6f7;
     box-shadow: 0 4px 8px rgb(29 34 37 / 10%);
-    background-color: #094ab3;
     background-image: conic-gradient(from 1turn,#315ea1,#3a85ff);
-    display: block;
     border-radius: 6.25rem;
     font-weight: 700;
     cursor: pointer;
     border: none;
-    padding: 0;
-    user-select: none;
-    font-size: .875rem;
 }
 
 /* Sidebar */
